@@ -1,5 +1,5 @@
 const LOOP_COUNT = 10000;
-const Probster = require('./probster.js');
+const Probster = require('./index.js');
 
 const preinit_probs = [
     new Probster.Probability(10, 0),

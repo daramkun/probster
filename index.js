@@ -44,14 +44,15 @@ function get_custom_probability_result(probs) {
 function get_equal_probability_result(arr) {
     if(arr == null || arr.length == 0) {
         return null;
-    } else if(probs.length == 1) {
-        return probs[0];
+    } else if(arr.length == 1) {
+        return arr[0];
     }
 
-    return arr[Math.round(Math.random() * arr.length)];
+    return arr[Math.round(Math.random() * (arr.length - 1))];
 }
 
 module.exports = {
     Probability: Probability,
-    get_probability_result: get_probability_result
+    get_custom_probability_result: get_custom_probability_result,
+    get_equal_probability_result: get_equal_probability_result,
 }
