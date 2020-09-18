@@ -1,0 +1,14 @@
+{
+  "name": "probster",
+  "version": "1.0.0",
+  "description": "Probability Manager",
+  "main": "probster.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "probability"
+  ],
+  "author": "Jin Jae Yeon",
+  "license": "MIT"
+}
