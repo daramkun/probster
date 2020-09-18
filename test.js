@@ -13,7 +13,7 @@ var results = [
     0, 0, 0, 0, 0
 ];
 for(let i = 0; i < LOOP_COUNT; ++i) {
-    const result = Probster.get_probability_result(preinit_probs);
+    const result = Probster.get_custom_probability_result(preinit_probs);
     ++results[result];
 }
 

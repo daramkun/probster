@@ -17,7 +17,7 @@ class Probability {
  * @param {Array<Probability>} probs
  * @return {Object}
  */
-function get_probability_result(probs) {
+function get_custom_probability_result(probs) {
     if(probs == null || probs.length == 0) {
         return null;
     } else if (probs.length == 1) {
@@ -39,6 +39,16 @@ function get_probability_result(probs) {
         }
     }
     return probs[probs.length - 1].value;
+}
+
+function get_equal_probability_result(arr) {
+    if(arr == null || arr.length == 0) {
+        return null;
+    } else if(probs.length == 1) {
+        return probs[0];
+    }
+
+    return arr[Math.round(Math.random() * arr.length)];
 }
 
 module.exports = {
